@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <h3 class="title">Password Generator</h3>
+
+    <div class="container">
+      <div class="random-pass">
+        <p class="heading-l pass-field">PTx1f5DaFX</p>
+        <a class="copy-btn">
+          <span class="copy-icon"></span>
+        </a>
+      </div>
+      <div class="generator-container">
+        <div class="char-length">
+          <p class="primary-text">Character Length</p>
+          <p class="current-length heading-l text-green">10</p>
+        </div>
+        <div class="slider-container">
+          <input type="range" min="1" max="20" value="10" class="slider" />
+        </div>
+        <div class="checkbox-options">
+          <div class="uppercase">
+            <input type="checkbox" id="uppercase" name="uppercase" checked />
+            <label for="uppercase" class="primary-text">Include Uppercase Letters</label>
+          </div>
+          <div class="lowercase">
+            <input type="checkbox" id="lowercase" name="lowercase" checked />
+            <label for="lowercase" class="primary-text">Include Lowercase Letters</label>
+          </div>
+          <div class="numbers">
+            <input type="checkbox" id="numbers" name="numbers" checked />
+            <label for="numbers" class="primary-text">Include Numbers</label>
+          </div>
+          <div class="symbols">
+            <input type="checkbox" id="symbols" name="symbols" />
+            <label for="symbols" class="primary-text">Include Symbols</label>
+          </div>
+        </div>
+        <div class="strength-container">
+            <p class="primary-text strength-color">STRENGTH</p>
+            <div class="strength-indicator-container">
+                <span class="password-strength-text heading-m">medium</span>
+                <div class="strength-indicator-bar">
+                    <div class="bar medium"></div>
+                    <div class="bar medium"></div>
+                    <div class="bar medium"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="generate-btn">
+            <button class="btn primary-text">generate<span class="right-arrow"></span></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
